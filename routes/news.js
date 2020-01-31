@@ -10,7 +10,7 @@ router.get("/", (req, res) => {
     created: -1
   });
   findNews.exec((err, data) => {
-    console.log(data);
+    // console.log(data);
     res.render("news", { title: "News", data, search });
   });
 });
